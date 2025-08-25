@@ -12,7 +12,7 @@ export default function TeamDashboard() {
 	const [lastUpdate, setLastUpdate] = useState<string>('')
 	const [windowWidth, setWindowWidth] = useState(0)
 
-	const fetchUsers = async () => {
+	const fetchUsers = useCallback(async () => {
 		setLoading(true)
 		setError('')
 
@@ -28,7 +28,7 @@ export default function TeamDashboard() {
 		} finally {
 			setLoading(false)
 		}
-	}
+	}, [selectedDepartment])
 
 	useEffect(() => {
 		fetchUsers()
@@ -38,7 +38,11 @@ export default function TeamDashboard() {
 		}
 		window.addEventListener('resize', handleResize)
 		handleResize()
-	}, [fetchUsers])
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [selectedDepartment]) 
 
 	const handleUserSelect = (user: User) => {
 		setSelectedUser(user)
@@ -124,6 +128,7 @@ export default function TeamDashboard() {
 				<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '15px' }}>
 					{users.map((user) => (
 						<div
+							key={user.id}
 							style={{
 								padding: '15px',
 								border: selectedUser?.id === user.id ? '2px solid #007bff' : '1px solid #ddd',
