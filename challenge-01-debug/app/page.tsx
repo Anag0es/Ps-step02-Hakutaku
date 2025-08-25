@@ -58,12 +58,7 @@ export default function TeamDashboard() {
 	}
 
 	const handleDeleteUser = (userId: number) => {
-		const currentUsers = users
-		const userIndex = currentUsers.findIndex((u) => u.id === userId)
-		if (userIndex > -1) {
-			currentUsers.splice(userIndex, 1)
-			setUsers(currentUsers)
-		}
+		setUsers(prevUsers => prevUsers.filter(user => user.id !== userId))
 	}
 
 	if (loading && users.length === 0) {
