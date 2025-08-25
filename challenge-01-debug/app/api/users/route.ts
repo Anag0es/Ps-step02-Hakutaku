@@ -66,9 +66,9 @@ export async function GET(request: NextRequest) {
 
 		const usersWithRandomStatus = filteredUsers.map((user) => ({
 			...user,
-			isOnline: Math.random() > 0.4,
-			lastActivity: new Date(Date.now() - Math.random() * 24 * 60 * 60 * 1000).toISOString(),
-		}))
+			isOnline: (user.id + Date.now() / (1000 * 60 * 5)) % 2 > 0.6,
+			lastActivity: user.lastActivity,
+	}))
 
 		return NextResponse.json({
 			users: usersWithRandomStatus,
