@@ -1,0 +1,32 @@
+{
+	"name": "challenge-03-search",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3002",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"test": "mocha",
+		"test:watch": "mocha --watch --require ts-node/register '__tests__/**/*.test.ts'"
+	},
+	"dependencies": {
+		"chai": "^6.0.1",
+		"next": "15.5.0",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1"
+	},
+	"devDependencies": {
+		"@types/chai": "^5.2.2",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^24.3.0",
+		"@types/react": "^19.1.11",
+		"@types/react-dom": "^19.1.7",
+		"eslint": "^9.34.0",
+		"eslint-config-next": "15.5.0",
+		"mocha": "^11.7.1",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.20.4",
+		"typescript": "^5.9.2"
+	}
+}

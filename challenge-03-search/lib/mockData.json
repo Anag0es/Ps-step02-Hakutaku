@@ -1,0 +1,222 @@
+[
+	{
+		"id": "1",
+		"title": "Implementação de RAG na Hakutaku",
+		"content": "A Hakutaku utiliza Retrieval-Augmented Generation (RAG) para combinar busca semântica com geração de texto, permitindo respostas mais precisas e contextualizadas baseadas na base de conhecimento corporativa. O sistema RAG é fundamental para nossa arquitetura de IA.",
+		"category": "documentation",
+		"source": "docs/architecture/rag-implementation.md",
+		"score": 0,
+		"snippet": "RAG combina busca semântica com geração de texto...",
+		"timestamp": "2024-01-15T10:30:00Z",
+		"author": "João Silva"
+	},
+	{
+		"id": "2",
+		"title": "GraphQL API - Query de Busca",
+		"content": "mutation SearchDocuments($query: String!, $filters: SearchFilters) { search(query: $query, filters: $filters) { results { id title content score } } } Esta API permite buscas complexas em nossa base de conhecimento.",
+		"category": "api",
+		"source": "api/graphql/search.graphql",
+		"score": 0,
+		"snippet": "mutation SearchDocuments para busca de documentos...",
+		"timestamp": "2024-01-12T14:20:00Z",
+		"author": "Maria Santos"
+	},
+	{
+		"id": "3",
+		"title": "Como funciona a busca semântica?",
+		"content": "A busca semântica na Hakutaku usa embeddings para entender o significado das consultas, não apenas palavras-chave. Isso permite encontrar documentos relacionados mesmo quando não há correspondência exata de termos. É uma revolução na forma como buscamos informações.",
+		"category": "wiki",
+		"source": "wiki/semantic-search-explained",
+		"score": 0,
+		"snippet": "busca semântica usa embeddings para entender significado...",
+		"timestamp": "2024-01-18T09:15:00Z",
+		"author": "Pedro Costa"
+	},
+	{
+		"id": "4",
+		"title": "Integração com Slack finalizada",
+		"content": "Pessoal, finalizei a integração com o Slack! Agora conseguimos indexar mensagens e threads automaticamente. A busca vai ficar muito mais rica com esse conteúdo. Slack é nossa principal ferramenta de comunicação.",
+		"category": "slack",
+		"source": "#dev-updates",
+		"score": 0,
+		"snippet": "integração com Slack finalizada, indexação automática...",
+		"timestamp": "2024-01-20T16:45:00Z",
+		"author": "Ana Oliveira"
+	},
+	{
+		"id": "5",
+		"title": "Configuração dos índices de busca",
+		"content": "Conforme conversamos na reunião, vou ajustar os parâmetros de similaridade do vetor de embeddings. Isso deve melhorar a precisão da busca em cerca de 15%. Os índices são cruciais para performance.",
+		"category": "email",
+		"source": "email-thread-001",
+		"score": 0,
+		"snippet": "ajustar parâmetros de similaridade, melhorar precisão...",
+		"timestamp": "2024-01-17T11:30:00Z",
+		"author": "Carlos Ferreira"
+	},
+	{
+		"id": "6",
+		"title": "TypeScript - Tipos para busca",
+		"content": "interface SearchQuery { term: string; filters?: { category?: string; dateRange?: DateRange; }; sort?: SortOptions; } type SearchResponse = { results: SearchResult[]; total: number; } Tipagem é essencial para manter o código seguro.",
+		"category": "api",
+		"source": "src/types/search.ts",
+		"score": 0,
+		"snippet": "interface SearchQuery com tipos TypeScript...",
+		"timestamp": "2024-01-14T13:25:00Z",
+		"author": "João Silva"
+	},
+	{
+		"id": "7",
+		"title": "Performance de Busca - Otimização",
+		"content": "Implementei melhorias no algoritmo de busca que reduziram o tempo de resposta em 40%. Agora usamos indexação invertida e cache de resultados frequentes. Performance é tudo em sistemas de busca.",
+		"category": "documentation",
+		"source": "docs/performance/search-optimization.md",
+		"score": 0,
+		"snippet": "melhorias no algoritmo reduziram tempo em 40%...",
+		"timestamp": "2024-01-22T15:30:00Z",
+		"author": "Ana Oliveira"
+	},
+	{
+		"id": "8",
+		"title": "Bug: Busca não funciona com acentos",
+		"content": "Descobri um bug onde a busca não retorna resultados quando o usuário digita palavras com acentos. Precisamos normalizar a entrada antes de processar. Usuários brasileiros usam muito acentos.",
+		"category": "slack",
+		"source": "#bugs",
+		"score": 0,
+		"snippet": "bug com acentos na busca, normalizar entrada...",
+		"timestamp": "2024-01-19T11:20:00Z",
+		"author": "Pedro Costa"
+	},
+	{
+		"id": "9",
+		"title": "Search Engine Fundamentals",
+		"content": "Todo desenvolvedor deveria entender como funcionam os motores de busca. Desde indexação até ranking, cada etapa é importante. Lucene, Elasticsearch, são ferramentas poderosas para busca textual.",
+		"category": "wiki",
+		"source": "wiki/search-fundamentals",
+		"score": 0,
+		"snippet": "fundamentos de motores de busca, indexação e ranking...",
+		"timestamp": "2024-01-10T09:00:00Z",
+		"author": "Maria Santos"
+	},
+	{
+		"id": "10",
+		"title": "Roadmap: Melhorias na Busca 2024",
+		"content": "Para 2024 planejamos implementar: busca por voz, sugestões automáticas, correção de typos, filtros avançados e integração com IA. A busca será o coração do produto Hakutaku.",
+		"category": "documentation",
+		"source": "docs/roadmap/search-2024.md",
+		"score": 0,
+		"snippet": "roadmap 2024: busca por voz, sugestões, correção typos...",
+		"timestamp": "2024-01-25T14:00:00Z",
+		"author": "João Silva"
+	},
+	{
+		"id": "11",
+		"title": "Machine Learning para Busca",
+		"content": "Estamos experimentando com modelos de machine learning para melhorar a relevância dos resultados de busca. Random Forest e Gradient Boosting mostraram resultados promissores nos testes iniciais.",
+		"category": "documentation",
+		"source": "docs/ml/search-ranking.md",
+		"score": 0,
+		"snippet": "ML para melhorar relevância, Random Forest promissor...",
+		"timestamp": "2024-01-30T16:20:00Z",
+		"author": "Carlos Ferreira"
+	},
+	{
+		"id": "12",
+		"title": "Elasticsearch vs PostgreSQL Full Text",
+		"content": "Comparamos Elasticsearch com PostgreSQL full-text search. Elasticsearch venceu em velocidade, mas PostgreSQL é mais simples para casos de uso menores. A decisão depende da escala.",
+		"category": "wiki",
+		"source": "wiki/search-comparison",
+		"score": 0,
+		"snippet": "comparação Elasticsearch vs PostgreSQL full-text...",
+		"timestamp": "2024-01-28T10:15:00Z",
+		"author": "Ana Oliveira"
+	},
+	{
+		"id": "13",
+		"title": "Indexação de Documentos PDF",
+		"content": "Implementamos extração de texto de PDFs para indexação. Usamos Apache Tika para extrair não apenas texto, mas também metadados. Agora PDFs são pesquisáveis na nossa base.",
+		"category": "api",
+		"source": "api/document-processor/pdf-indexer.ts",
+		"score": 0,
+		"snippet": "indexação de PDFs com Apache Tika, metadados extraídos...",
+		"timestamp": "2024-02-01T14:30:00Z",
+		"author": "Pedro Costa"
+	},
+	{
+		"id": "14",
+		"title": "Algoritmos de Similaridade Textual",
+		"content": "Testamos diferentes algoritmos para calcular similaridade: Cosine Similarity, Jaccard Index, e Levenshtein Distance. Cada um tem suas vantagens dependendo do tipo de busca que queremos implementar.",
+		"category": "documentation",
+		"source": "docs/algorithms/similarity-metrics.md",
+		"score": 0,
+		"snippet": "algoritmos de similaridade: Cosine, Jaccard, Levenshtein...",
+		"timestamp": "2024-02-05T11:45:00Z",
+		"author": "Maria Santos"
+	},
+	{
+		"id": "15",
+		"title": "Cache de Resultados Implementado",
+		"content": "Implementei um sistema de cache Redis para resultados de busca frequentes. Reduziu latência em 60% para queries populares. O cache expira em 1 hora para manter dados atualizados.",
+		"category": "slack",
+		"source": "#performance",
+		"score": 0,
+		"snippet": "cache Redis implementado, 60% menos latência...",
+		"timestamp": "2024-02-08T09:20:00Z",
+		"author": "João Silva"
+	},
+	{
+		"id": "16",
+		"title": "Análise de Logs de Busca",
+		"content": "Analisamos 1 milhão de queries dos últimos 3 meses. 80% das buscas são por 'documentação', 'API', ou nomes de projetos. Vamos otimizar para esses casos mais comuns.",
+		"category": "email",
+		"source": "email-analytics-report",
+		"score": 0,
+		"snippet": "1M queries analisadas, 80% são por documentação/API...",
+		"timestamp": "2024-02-10T15:10:00Z",
+		"author": "Ana Oliveira"
+	},
+	{
+		"id": "17",
+		"title": "Fuzzy Search com N-grams",
+		"content": "Implementei busca fuzzy usando n-grams para lidar com typos. Quebra palavras em fragmentos de 2-3 caracteres e calcula similaridade. Funciona bem para erros de digitação comuns.",
+		"category": "api",
+		"source": "api/search/fuzzy-matcher.ts",
+		"score": 0,
+		"snippet": "fuzzy search com n-grams, lida bem com typos...",
+		"timestamp": "2024-02-12T12:30:00Z",
+		"author": "Carlos Ferreira"
+	},
+	{
+		"id": "18",
+		"title": "Auto-complete Inteligente",
+		"content": "Criamos auto-complete que aprende com histórico de buscas. Usa Trie data structure para sugestões rápidas e rankeia por popularidade. UX muito melhor para usuários.",
+		"category": "wiki",
+		"source": "wiki/autocomplete-implementation",
+		"score": 0,
+		"snippet": "auto-complete com Trie, rankeia por popularidade...",
+		"timestamp": "2024-02-15T13:45:00Z",
+		"author": "Pedro Costa"
+	},
+	{
+		"id": "19",
+		"title": "Busca por Código - Syntax Highlighting",
+		"content": "Adicionamos suporte para buscar dentro de código-fonte. Implementamos syntax highlighting nos resultados usando Prism.js. Desenvolvedores podem encontrar funções e classes facilmente.",
+		"category": "documentation",
+		"source": "docs/features/code-search.md",
+		"score": 0,
+		"snippet": "busca em código com syntax highlighting via Prism.js...",
+		"timestamp": "2024-02-18T16:00:00Z",
+		"author": "Maria Santos"
+	},
+	{
+		"id": "20",
+		"title": "Monitoramento de Performance",
+		"content": "Configuramos dashboards no Grafana para monitorar performance da busca. Métricas: latência média, throughput, cache hit ratio, e índice de satisfação do usuário baseado em cliques.",
+		"category": "slack",
+		"source": "#monitoring",
+		"score": 0,
+		"snippet": "dashboards Grafana para métricas de busca...",
+		"timestamp": "2024-02-20T10:25:00Z",
+		"author": "João Silva"
+	}
+]
